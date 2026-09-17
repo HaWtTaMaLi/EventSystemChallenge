@@ -769,7 +769,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba864fdd677b64c4fbe50378c67b71e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonBehavior
-  spawnedObject: {fileID: 0}
+  spawnedObject: {fileID: 711199891}
 --- !u!1 &711199891
 GameObject:
   m_ObjectHideFlags: 0
@@ -1614,7 +1614,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba864fdd677b64c4fbe50378c67b71e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonBehavior
-  spawnedObject: {fileID: 0}
+  spawnedObject: {fileID: 711199891}
 --- !u!1 &1403430266
 GameObject:
   m_ObjectHideFlags: 0
