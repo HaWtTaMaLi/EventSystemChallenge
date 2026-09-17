@@ -718,19 +718,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 646671643}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 646671645}
-        m_TargetAssemblyTypeName: ButtonBehavior, Assembly-CSharp
-        m_MethodName: KillButton
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &646671643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -781,7 +769,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba864fdd677b64c4fbe50378c67b71e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonBehavior
-  spawnedObject: {fileID: 711199891}
+  spawnedObject: {fileID: 0}
 --- !u!1 &711199891
 GameObject:
   m_ObjectHideFlags: 0
@@ -1575,19 +1563,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1241126162}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1241126164}
-        m_TargetAssemblyTypeName: ButtonBehavior, Assembly-CSharp
-        m_MethodName: SpawnButton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1241126162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1638,7 +1614,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba864fdd677b64c4fbe50378c67b71e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonBehavior
-  spawnedObject: {fileID: 711199891}
+  spawnedObject: {fileID: 0}
 --- !u!1 &1403430266
 GameObject:
   m_ObjectHideFlags: 0
@@ -1950,6 +1926,10 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  - Name: Button Actions
+    Event:
+      m_PersistentCalls:
+        m_Calls:
         - m_Target: {fileID: 646671645}
           m_TargetAssemblyTypeName: ButtonBehavior, Assembly-CSharp
           m_MethodName: KillButton
