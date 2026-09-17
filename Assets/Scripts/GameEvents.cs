@@ -16,10 +16,10 @@ public class GameEvents : MonoBehaviour
     
     public Events[] AllEvents;
     public static event Action onSpawnClick; //Adding STATIC saved my lifeeeeee
-    public static event Action onKillClick; //instance = this was NOT working 
+    public static event Action onColourClick; //instance = this was NOT working 
 
     public Button spawnButton;
-    public Button killButton;
+    public Button colourButton;
 
     public void Start()
     {
@@ -27,9 +27,8 @@ public class GameEvents : MonoBehaviour
 
         //Listeners
         spawnButton.onClick.AddListener(() => AllEvents[0].Event.Invoke());
-        killButton.onClick.AddListener(() => AllEvents[1].Event.Invoke());
+        colourButton.onClick.AddListener(() => AllEvents[1].Event.Invoke());
     }
-
 
     public void SpawnClick()
     {
@@ -40,12 +39,13 @@ public class GameEvents : MonoBehaviour
         }
     }
 
-    public void KillClick()
+    public void ColourClick()
     {
-        if (onKillClick != null)
+        if (onColourClick != null)
         {
-            onKillClick();
+            onColourClick();
             //Debug.Log("Listening to KillClick");
         }
     }
 }
+//notes you can add a image to button and drag it to Target Graphic in button editor and change it to sprite swap to have cool visuals
