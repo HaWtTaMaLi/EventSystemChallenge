@@ -1,28 +1,42 @@
 using System;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
+
+[Serializable]
+public class Events
+{
+    public string Name;
+    public UnityEvent Event;
+}
 
 public class GameEvents : MonoBehaviour
 {
-    //do game events here 
-    //subscribes? 
+    //public static GameEvents instance;
+    
+    public Events[] AllEvents;
+    public static event Action onSpawnClick; //Adding STATIC saved my lifeeeeee
+    public static event Action onKillClick; //instance = this was NOT working 
 
-    public static GameEvents instance;
+    public Button spawnButton;
+    public Button killButton;
 
-    private void Awake()
+    public void Start()
     {
-        instance = this;
-    }
+       //instance = this;
 
-    public event Action onSpawnClick; //public event Action onSpawnClick- if you dont want to add ID
-    public event Action onKillClick;
+        //Listeners
+        spawnButton.onClick.AddListener(() => AllEvents[0].Event.Invoke());
+        killButton.onClick.AddListener(() => AllEvents[0].Event.Invoke());
+    }
 
 
     public void SpawnClick()
     {
-        if(onSpawnClick != null)
+        if (onSpawnClick != null)
         {
             onSpawnClick();
+            //Debug.Log("Listening to SpawnClick");
         }
     }
 
@@ -31,6 +45,7 @@ public class GameEvents : MonoBehaviour
         if (onKillClick != null)
         {
             onKillClick();
+            //Debug.Log("Listening to KillClick");
         }
     }
 }
