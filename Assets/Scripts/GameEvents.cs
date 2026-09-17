@@ -27,7 +27,7 @@ public class GameEvents : MonoBehaviour
 
         //Listeners
         spawnButton.onClick.AddListener(() => AllEvents[0].Event.Invoke());
-        killButton.onClick.AddListener(() => AllEvents[0].Event.Invoke());
+        killButton.onClick.AddListener(() => AllEvents[1].Event.Invoke());
     }
 
 
